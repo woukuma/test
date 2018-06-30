@@ -1,0 +1,78 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background-color: black;
+    
+}
+
+.movie {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.movie h1{
+    font-size: 200px;
+    color: white;
+    z-index: 5;
+    position: relative;
+}
+
+.movie h2{
+    font-size: 100px;
+    z-index: 4;
+    position: relative;
+}
+
+
+.cover-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../movieCover.png);
+    text-align: center;
+     z-index: 3;
+}
+ 
+.movie video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+
+
+.btn-link {
+  color: #ffffff;
+  border: 1px solid #000;
+  padding: 10px 100px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  margin-bottom: 100px;
+    font-size: 50px;
+    z-index: 4;
+    position: relative;
+}
+
+.btn-link:hover {
+  background: #000;
+  border-color: #000;
+　color: black;
+}
+
