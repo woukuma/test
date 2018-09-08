@@ -5,18 +5,89 @@
     <title>Mini Web</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Merriweather|Oswald" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+$(function(){
+
+    $('a[href^=#]').click(function(){
+
+        var speed = 1000;
+
+        var href= $(this).attr("href");
+
+        var target = $(href == "#" || href == "" ? 'html' : href);
+
+        var position = target.offset().top;
+
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+
+        return false;
+
+    });
+
+});
+
+</script>
+
 </head>
 
 <body>
     <div class="movie">
         <h1>E-sports team</h1>
-        <h1>Meg-M1Lk</h1>
-        <p><a class="btn-link" href="">check our team</a></p>
+        <h1>Meg-M1Lx</h1>
+        <div class="back">
+            <div class="button_base b10_tveffect">
+                <div><a href="#first" style="color:#fff;text-decoration:none">check our team</a></div>
+                <div>
+                    <div><a href="#first"style="color:#fff;text-decoration:none">check our team</a></div>
+                    <div><a href="#first"style="color:#fff;text-decoration:none">check our team</a></div>
+                    <div><a href="#first"style="color:#fff;text-decoration:none">check our team</a></div>
+                </div>
+            </div>
+        </div>       
         <div class="cover-img"></div>
-        <video autoplay loop>
+        <video muted autoplay loop>
           <source src="./toppage2.mp4" type="video/mp4">
         </video>
     </div>
+<div class="main">
+    <video id="first" muted autoplay >
+    <source src="main4-2.mp4" type="video/mp4">
+    </video>
+    
+    <div class="a">
+     <h1> Member Introduction</h1>   
+    </div>
+    
+    <div class="person">
+      <ul>
+       <li><h2>mush</h2></li>
+       <li><h2>kentomeiji</h2></li>
+       <li><h2>yu-a</h2></li>
+       <li><h2>zko-2ds</h2></li>
+      </ul>
+    </div>
+    
+ <div class="person2">
+      <ul>
+       <li><h2>woukuma</h2></li>
+       <li><h2>kaito</h2></li>
+       <li><h2>R.S800</h2></li>
+       <li><h2>kidox</h2></li>
+      </ul>
+    </div>
+    
+    
+ <div class="person3">
+      <ul>
+       <li><h2>yuuki</h2></li>
+       <li><h2>gosho</h2></li>
+       <li><h2>Qnoit</h2></li>
+       <li><h2>makaronia</h2></li>
+      </ul>
+    </div>
+    
+</div>
 </body>
 
 </html>
